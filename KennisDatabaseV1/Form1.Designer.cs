@@ -256,7 +256,7 @@ namespace KennisDatabaseV1
             // 
             // NavMoveTimer
             // 
-            this.NavMoveTimer.Interval = 0;
+            this.NavMoveTimer.Interval = 1;
             this.NavMoveTimer.Tick += new System.EventHandler(this.NavMoveTimer_Tick);
             // 
             // Form1
