@@ -39,16 +39,18 @@ namespace KennisDatabaseV1
             this.panel4 = new System.Windows.Forms.Panel();
             this.NavMenuLBox = new System.Windows.Forms.ListBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.SearchbarTxt = new System.Windows.Forms.TextBox();
             this.HamburgerBtn = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.SearchbarTxt = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.NavMenuPnl.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,7 +77,7 @@ namespace KennisDatabaseV1
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1387, 66);
             this.label1.TabIndex = 4;
-            this.label1.Text = "KennisDatabase | Home";
+            this.label1.Text = "Kennis Kompas | Home";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
             // 
@@ -130,10 +132,10 @@ namespace KennisDatabaseV1
             this.NavMenuPnl.Controls.Add(this.panel4);
             this.NavMenuPnl.Controls.Add(this.panel3);
             this.NavMenuPnl.Dock = System.Windows.Forms.DockStyle.Right;
-            this.NavMenuPnl.Location = new System.Drawing.Point(1627, 66);
+            this.NavMenuPnl.Location = new System.Drawing.Point(1024, 66);
             this.NavMenuPnl.Margin = new System.Windows.Forms.Padding(4);
             this.NavMenuPnl.Name = "NavMenuPnl";
-            this.NavMenuPnl.Size = new System.Drawing.Size(80, 820);
+            this.NavMenuPnl.Size = new System.Drawing.Size(683, 820);
             this.NavMenuPnl.TabIndex = 1;
             // 
             // panel4
@@ -143,7 +145,7 @@ namespace KennisDatabaseV1
             this.panel4.Location = new System.Drawing.Point(0, 62);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(80, 758);
+            this.panel4.Size = new System.Drawing.Size(683, 758);
             this.panel4.TabIndex = 1;
             // 
             // NavMenuLBox
@@ -179,29 +181,20 @@ namespace KennisDatabaseV1
             this.NavMenuLBox.Location = new System.Drawing.Point(0, 0);
             this.NavMenuLBox.Margin = new System.Windows.Forms.Padding(4);
             this.NavMenuLBox.Name = "NavMenuLBox";
-            this.NavMenuLBox.Size = new System.Drawing.Size(80, 758);
+            this.NavMenuLBox.Size = new System.Drawing.Size(683, 758);
             this.NavMenuLBox.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.SearchbarTxt);
+            this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.HamburgerBtn);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(80, 62);
+            this.panel3.Size = new System.Drawing.Size(683, 62);
             this.panel3.TabIndex = 0;
-            // 
-            // SearchbarTxt
-            // 
-            this.SearchbarTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchbarTxt.Location = new System.Drawing.Point(179, 7);
-            this.SearchbarTxt.Margin = new System.Windows.Forms.Padding(4);
-            this.SearchbarTxt.Multiline = true;
-            this.SearchbarTxt.Name = "SearchbarTxt";
-            this.SearchbarTxt.Size = new System.Drawing.Size(448, 46);
-            this.SearchbarTxt.TabIndex = 1;
             // 
             // HamburgerBtn
             // 
@@ -225,7 +218,7 @@ namespace KennisDatabaseV1
             this.panel5.Location = new System.Drawing.Point(0, 66);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1627, 820);
+            this.panel5.Size = new System.Drawing.Size(1024, 820);
             this.panel5.TabIndex = 2;
             // 
             // label3
@@ -235,7 +228,7 @@ namespace KennisDatabaseV1
             this.label3.Location = new System.Drawing.Point(0, 58);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1627, 100);
+            this.label3.Size = new System.Drawing.Size(1024, 100);
             this.label3.TabIndex = 2;
             this.label3.Text = "Dit programma is gemaakt door klas 2SV1.\r\nDit is een programma waar informatie om" +
     "trend C# opgeslagen is voor uw gemakkelijkheid.\r\n";
@@ -248,10 +241,30 @@ namespace KennisDatabaseV1
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1627, 58);
+            this.label2.Size = new System.Drawing.Size(1024, 58);
             this.label2.TabIndex = 0;
             this.label2.Text = "Welkom";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(102, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(517, 50);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // SearchbarTxt
+            // 
+            this.SearchbarTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SearchbarTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchbarTxt.Location = new System.Drawing.Point(118, 10);
+            this.SearchbarTxt.Multiline = true;
+            this.SearchbarTxt.Name = "SearchbarTxt";
+            this.SearchbarTxt.Size = new System.Drawing.Size(454, 41);
+            this.SearchbarTxt.TabIndex = 3;
             // 
             // Form1
             // 
@@ -265,13 +278,14 @@ namespace KennisDatabaseV1
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Kennis Kompas";
             this.panel1.ResumeLayout(false);
             this.NavMenuPnl.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -290,8 +304,9 @@ namespace KennisDatabaseV1
         private System.Windows.Forms.Button HamburgerBtn;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox SearchbarTxt;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox SearchbarTxt;
     }
 }
 
