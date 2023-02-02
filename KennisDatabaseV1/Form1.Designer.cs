@@ -29,7 +29,6 @@ namespace KennisDatabaseV1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,7 +44,6 @@ namespace KennisDatabaseV1
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.NavMoveTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.NavMenuPnl.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -62,7 +60,7 @@ namespace KennisDatabaseV1
             this.panel1.Controls.Add(this.ReloadBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1707, 66);
             this.panel1.TabIndex = 0;
@@ -89,7 +87,7 @@ namespace KennisDatabaseV1
             this.MinBtn.FlatAppearance.BorderSize = 0;
             this.MinBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MinBtn.Location = new System.Drawing.Point(1547, 0);
-            this.MinBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinBtn.Margin = new System.Windows.Forms.Padding(4);
             this.MinBtn.Name = "MinBtn";
             this.MinBtn.Size = new System.Drawing.Size(80, 66);
             this.MinBtn.TabIndex = 6;
@@ -104,7 +102,7 @@ namespace KennisDatabaseV1
             this.ClsBtn.FlatAppearance.BorderSize = 0;
             this.ClsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClsBtn.Location = new System.Drawing.Point(1627, 0);
-            this.ClsBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClsBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ClsBtn.Name = "ClsBtn";
             this.ClsBtn.Size = new System.Drawing.Size(80, 66);
             this.ClsBtn.TabIndex = 5;
@@ -117,8 +115,9 @@ namespace KennisDatabaseV1
             this.ReloadBtn.FlatAppearance.BorderSize = 0;
             this.ReloadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ReloadBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReloadBtn.ForeColor = System.Drawing.Color.White;
             this.ReloadBtn.Location = new System.Drawing.Point(0, 0);
-            this.ReloadBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ReloadBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ReloadBtn.Name = "ReloadBtn";
             this.ReloadBtn.Size = new System.Drawing.Size(160, 66);
             this.ReloadBtn.TabIndex = 0;
@@ -132,7 +131,7 @@ namespace KennisDatabaseV1
             this.NavMenuPnl.Controls.Add(this.panel3);
             this.NavMenuPnl.Dock = System.Windows.Forms.DockStyle.Right;
             this.NavMenuPnl.Location = new System.Drawing.Point(1627, 66);
-            this.NavMenuPnl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavMenuPnl.Margin = new System.Windows.Forms.Padding(4);
             this.NavMenuPnl.Name = "NavMenuPnl";
             this.NavMenuPnl.Size = new System.Drawing.Size(80, 820);
             this.NavMenuPnl.TabIndex = 1;
@@ -142,7 +141,7 @@ namespace KennisDatabaseV1
             this.panel4.Controls.Add(this.NavMenuLBox);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 62);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(80, 758);
             this.panel4.TabIndex = 1;
@@ -178,7 +177,7 @@ namespace KennisDatabaseV1
             "Chapter 22 Lambda Expressions and LINQ",
             "Chapter 23 Methodology of Problem Solving"});
             this.NavMenuLBox.Location = new System.Drawing.Point(0, 0);
-            this.NavMenuLBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavMenuLBox.Margin = new System.Windows.Forms.Padding(4);
             this.NavMenuLBox.Name = "NavMenuLBox";
             this.NavMenuLBox.Size = new System.Drawing.Size(80, 758);
             this.NavMenuLBox.TabIndex = 0;
@@ -189,7 +188,7 @@ namespace KennisDatabaseV1
             this.panel3.Controls.Add(this.HamburgerBtn);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(80, 62);
             this.panel3.TabIndex = 0;
@@ -198,7 +197,7 @@ namespace KennisDatabaseV1
             // 
             this.SearchbarTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchbarTxt.Location = new System.Drawing.Point(179, 7);
-            this.SearchbarTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SearchbarTxt.Margin = new System.Windows.Forms.Padding(4);
             this.SearchbarTxt.Multiline = true;
             this.SearchbarTxt.Name = "SearchbarTxt";
             this.SearchbarTxt.Size = new System.Drawing.Size(448, 46);
@@ -211,7 +210,7 @@ namespace KennisDatabaseV1
             this.HamburgerBtn.Dock = System.Windows.Forms.DockStyle.Left;
             this.HamburgerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HamburgerBtn.Location = new System.Drawing.Point(0, 0);
-            this.HamburgerBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HamburgerBtn.Margin = new System.Windows.Forms.Padding(4);
             this.HamburgerBtn.Name = "HamburgerBtn";
             this.HamburgerBtn.Size = new System.Drawing.Size(80, 62);
             this.HamburgerBtn.TabIndex = 0;
@@ -224,7 +223,7 @@ namespace KennisDatabaseV1
             this.panel5.Controls.Add(this.label2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 66);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1627, 820);
             this.panel5.TabIndex = 2;
@@ -236,7 +235,7 @@ namespace KennisDatabaseV1
             this.label3.Location = new System.Drawing.Point(0, 58);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1627, 75);
+            this.label3.Size = new System.Drawing.Size(1627, 100);
             this.label3.TabIndex = 2;
             this.label3.Text = "Dit programma is gemaakt door klas 2SV1.\r\nDit is een programma waar informatie om" +
     "trend C# opgeslagen is voor uw gemakkelijkheid.\r\n";
@@ -254,11 +253,6 @@ namespace KennisDatabaseV1
             this.label2.Text = "Welkom";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // NavMoveTimer
-            // 
-            this.NavMoveTimer.Interval = 1;
-            this.NavMoveTimer.Tick += new System.EventHandler(this.NavMoveTimer_Tick);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -267,8 +261,9 @@ namespace KennisDatabaseV1
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.NavMenuPnl);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -297,7 +292,6 @@ namespace KennisDatabaseV1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox SearchbarTxt;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Timer NavMoveTimer;
     }
 }
 

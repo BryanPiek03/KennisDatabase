@@ -30,7 +30,6 @@ namespace KennisDatabaseV1
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-
         public Form1()
         {
             InitializeComponent();
@@ -39,6 +38,7 @@ namespace KennisDatabaseV1
             NavMenuLBox.Hide();
         }
 
+        
         private void ClsBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -51,14 +51,17 @@ namespace KennisDatabaseV1
 
         private void HamburgerBtn_Click(object sender, EventArgs e)
         {
-
-            NavMoveTimer.Enabled = true;
-            NavMoveTimer.Start();
-
             if (NavMenuPnl.Size.Width == NavWidth)
             {
                 SearchbarTxt.Show();
                 NavMenuLBox.Show();
+                NavMenuPnl.Size = new Size(480, NavMenuPnl.Height);
+            }
+            else
+            {
+                SearchbarTxt.Hide();
+                NavMenuLBox.Hide();
+                NavMenuPnl.Size = new Size(60, NavMenuPnl.Height);
             }
 
         }
@@ -67,42 +70,6 @@ namespace KennisDatabaseV1
         {
 
             Application.Restart();
-
-        }
-
-        private void NavMoveTimer_Tick(object sender, EventArgs e)
-        {
-
-            
-
-            if (expand)
-            {
-                // expand the panel
-                if (NavMenuPnl.Width < 480)
-                {
-                    NavMenuPnl.Width += 2;
-                }
-                else
-                {
-                    expand = false;
-                    NavMoveTimer.Stop();
-                }
-            }
-            else
-            {
-                // shrink the panel
-                if (NavMenuPnl.Width > 60)
-                {
-                    NavMenuPnl.Width -= 2;
-                }
-                else
-                {
-                    expand = true;
-                    NavMoveTimer.Stop();
-                    SearchbarTxt.Hide();
-                    NavMenuLBox.Hide();
-                }
-            }
 
         }
     }
