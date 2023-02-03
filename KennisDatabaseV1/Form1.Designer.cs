@@ -37,6 +37,7 @@ namespace KennisDatabaseV1
             this.ReloadBtn = new System.Windows.Forms.Button();
             this.NavMenuPnl = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.NavMenuLBox = new System.Windows.Forms.ListBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.SearchbarTxt = new System.Windows.Forms.TextBox();
@@ -140,6 +141,7 @@ namespace KennisDatabaseV1
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.flowLayoutPanel1);
             this.panel4.Controls.Add(this.NavMenuLBox);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 62);
@@ -148,36 +150,19 @@ namespace KennisDatabaseV1
             this.panel4.Size = new System.Drawing.Size(683, 758);
             this.panel4.TabIndex = 1;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(243, 19);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(8, 8);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
             // NavMenuLBox
             // 
             this.NavMenuLBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NavMenuLBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NavMenuLBox.FormattingEnabled = true;
             this.NavMenuLBox.ItemHeight = 29;
-            this.NavMenuLBox.Items.AddRange(new object[] {
-            "Chapter 1 Introduction to Programming",
-            "Chapter 2 Primitive Types and Variables",
-            "Chapter 3 Operators and Expressions",
-            "Chapter 4 Console Inputand Output",
-            "Chapter 5 Conditional Statements",
-            "Chapter 6 Loops",
-            "Chapter 7 Arrays",
-            "Chapter 8 Numeral Systems",
-            "Chapter 9 Methods",
-            "Chapter 10 Recursion",
-            "Chapter 11 Creating and Using Objects",
-            "Chapter 12 Exception Handling",
-            "Chapter 13 Strings and Text Processing",
-            "Chapter 14 Defining Classes",
-            "Chapter 15 Text Files",
-            "Chapter 16 Linear Data Structures",
-            "Chapter 17 Trees and Graphs",
-            "Chapter 18 Dictionaries, Hash-Tables and Sets",
-            "Chapter 19 Data Structures and Algorithm Complexity",
-            "Chapter 20 Object-Oriented Programming Principles",
-            "Chapter 21 High-Quality Programming Code",
-            "Chapter 22 Lambda Expressions and LINQ",
-            "Chapter 23 Methodology of Problem Solving"});
             this.NavMenuLBox.Location = new System.Drawing.Point(0, 0);
             this.NavMenuLBox.Margin = new System.Windows.Forms.Padding(4);
             this.NavMenuLBox.Name = "NavMenuLBox";
@@ -205,6 +190,7 @@ namespace KennisDatabaseV1
             this.SearchbarTxt.Name = "SearchbarTxt";
             this.SearchbarTxt.Size = new System.Drawing.Size(454, 41);
             this.SearchbarTxt.TabIndex = 3;
+            this.SearchbarTxt.TextChanged += new System.EventHandler(this.SearchbarTxt_TextChanged);
             // 
             // pictureBox1
             // 
@@ -308,6 +294,7 @@ namespace KennisDatabaseV1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox SearchbarTxt;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 
