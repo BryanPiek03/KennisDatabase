@@ -7,6 +7,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace KennisDatabaseV1
 {
@@ -20,7 +21,7 @@ namespace KennisDatabaseV1
         async public static void Load()
         {
             string cipherText = "3LWM2VW0o65XYYgqksnC7rKXa0Umoc3h6xUKtqIrssPmddD656Hetv+m+qCFuJfRxtUDhjQKYtV8Sqb6lipuo9f7RtQpsjFpN613LTgdW5c0MZVQZ5bgw4zP3pj161dQ";
-            string key = "";
+            string key = "VGVzc2FfX19fX19fX19fXw==";
 
             byte[] data = Convert.FromBase64String(key);
             key = Encoding.UTF8.GetString(data);
@@ -37,6 +38,7 @@ namespace KennisDatabaseV1
             {
                 documentList.Add(document);
             }
+
         }
 
         public static string DecryptString(string cipherText, string key)

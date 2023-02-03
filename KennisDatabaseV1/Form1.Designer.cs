@@ -37,7 +37,6 @@ namespace KennisDatabaseV1
             this.ReloadBtn = new System.Windows.Forms.Button();
             this.NavMenuPnl = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.NavMenuLBox = new System.Windows.Forms.ListBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.SearchbarTxt = new System.Windows.Forms.TextBox();
@@ -141,7 +140,6 @@ namespace KennisDatabaseV1
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.flowLayoutPanel1);
             this.panel4.Controls.Add(this.NavMenuLBox);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 62);
@@ -149,13 +147,6 @@ namespace KennisDatabaseV1
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(683, 758);
             this.panel4.TabIndex = 1;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(243, 19);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(8, 8);
-            this.flowLayoutPanel1.TabIndex = 1;
             // 
             // NavMenuLBox
             // 
@@ -294,7 +285,6 @@ namespace KennisDatabaseV1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox SearchbarTxt;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 
