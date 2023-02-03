@@ -39,18 +39,18 @@ namespace KennisDatabaseV1
             this.panel4 = new System.Windows.Forms.Panel();
             this.NavMenuLBox = new System.Windows.Forms.ListBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.SearchbarTxt = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HamburgerBtn = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.SearchbarTxt = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.NavMenuPnl.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -77,7 +77,7 @@ namespace KennisDatabaseV1
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1387, 66);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Kennis Kompas | Home";
+            this.label1.Text = "Kennis Compass | Home";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
             // 
@@ -196,6 +196,26 @@ namespace KennisDatabaseV1
             this.panel3.Size = new System.Drawing.Size(683, 62);
             this.panel3.TabIndex = 0;
             // 
+            // SearchbarTxt
+            // 
+            this.SearchbarTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SearchbarTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchbarTxt.Location = new System.Drawing.Point(118, 10);
+            this.SearchbarTxt.Multiline = true;
+            this.SearchbarTxt.Name = "SearchbarTxt";
+            this.SearchbarTxt.Size = new System.Drawing.Size(454, 41);
+            this.SearchbarTxt.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(102, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(517, 50);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // HamburgerBtn
             // 
             this.HamburgerBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HamburgerBtn.BackgroundImage")));
@@ -246,26 +266,6 @@ namespace KennisDatabaseV1
             this.label2.Text = "Welkom";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(102, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(517, 50);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // SearchbarTxt
-            // 
-            this.SearchbarTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SearchbarTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchbarTxt.Location = new System.Drawing.Point(118, 10);
-            this.SearchbarTxt.Multiline = true;
-            this.SearchbarTxt.Name = "SearchbarTxt";
-            this.SearchbarTxt.Size = new System.Drawing.Size(454, 41);
-            this.SearchbarTxt.TabIndex = 3;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -278,14 +278,15 @@ namespace KennisDatabaseV1
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Kennis Kompas";
+            this.Text = "Kennis Compass";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.NavMenuPnl.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
